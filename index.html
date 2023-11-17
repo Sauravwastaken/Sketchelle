@@ -10,37 +10,37 @@
       href="assets/logo-458f372f.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="assets/index-872e05b9.css" />
 
     <nav class="center pb-2 w-full site_padding">
       <div class="w-full">
         <a class="text-2xl font-medium" href="#">Sketchelle</a>
       </div>
-      <ul class="center space-x-8 w-full">
-        <li>
+      <ul class="center space-x-8 w-full lg:hidden">
+        <li class="footer_links">
           <a href="#">Gallery</a>
         </li>
-        <li>
+        <li class="footer_links">
           <a href="#">About</a>
         </li>
-        <li>
+        <li class="footer_links">
           <a href="#">Services</a>
         </li>
-        <li>
+        <li class="footer_links">
           <a href="#">Gallery</a>
         </li>
       </ul>
-      <div class="w-full flex justify-end items-center space-x-12">
-        <button class="uppercase">Login</button>
+      <div class="w-full flex justify-end items-center space-x-12 lg:hidden">
+        <button class="uppercase hover:scale-105 transition">Login</button>
         <button
-          class="uppercase bg-primary px-6 py-4 rounded-full transition hover:bg-transparent hover:outline-primary hover:outline hover:outline-2"
+          class="uppercase bg-primary px-6 py-4 rounded-full transition hover:scale-105"
         >
           Registration
         </button>
       </div>
     </nav>
+    <link rel="stylesheet" href="assets/index-71021729.css" />
   </head>
-  <body class="bg-background text-theme_white select-none">
+  <body class="bg-background text-theme_white">
     <!-- Hero -->
     <section
       class="min-h-screen center py-16 justify-start flex-col text-center space-y-6"
@@ -48,18 +48,19 @@
       <span
         class="w-[350px] h-[250px] bg-white absolute -z-10 blur-[290px]"
       ></span>
-      <h1 class="text-7.5xl text-white font-bold uppercase leading-normal">
+      <h1
+        class="text-[5vw] text-white font-bold uppercase leading-normal xs:text-3xl"
+      >
         The New modern <br />
         artwork museum
       </h1>
-      <h2 class="text-gray-300 w-3/5">
+      <h2 class="text-gray-300 w-3/5 xs:w-4/5">
         Museuma is the only creative space in the nation that is open to all and
         encourages everyone to explore and experience art, creativity, and our
         shared humanity.
       </h2>
       <button class="btn">
         <p>Get Ticket Now</p>
-
         <svg
           class="bg-theme_white stroke-primary rounded-full p-2 w-12 h-12"
           xmlns="http://www.w3.org/2000/svg"
@@ -80,12 +81,16 @@
       <!-- * Artists -->
       <div class="py-12">
         <!-- # CTA -->
-        <div class="center justify-between py-4">
-          <h2 class="text-7xl leading-tight font-bold uppercase">
+        <div
+          class="center justify-between py-4 lg:flex-col lg:items-start lg:space-y-2 md:w-4/5 md:mx-auto sm:w-11/12"
+        >
+          <h2
+            class="text-7xl leading-tight font-bold uppercase xl:text-5xl xs:text-3xl"
+          >
             Explore together <br />about artist
           </h2>
           <div class="space-y-8">
-            <p class="text-gray-600">
+            <p class="text-gray-600 xs:text-sm">
               The uniqueness of the collection is largely a result of the unique
               <br />circumstances surrounding the Museum of Art's founding.
             </p>
@@ -108,13 +113,19 @@
           </div>
         </div>
         <!-- # Cards -->
-        <div class="flex space-x-12 py-12">
+        <div
+          class="flex space-x-12 py-12 md:flex-col md:space-x-0 md:space-y-4"
+        >
           <div class="space-y-6 artist_card cursor-pointer">
-            <img src="assets/boy2-d7263b59.jpg" alt="" />
+            <img
+              class="md:w-4/5 md:mx-auto sm:w-11/12"
+              src="assets/boy2-d7263b59.jpg"
+              alt=""
+            />
             <span
-              class="artist_border transition border-b-2 border-gray-300 block"
+              class="artist_border transition border-b-2 border-gray-300 block md:w-4/5 md:mx-auto"
             ></span>
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between items-center md:w-4/5 md:mx-auto">
               <p class="text-3xl font-bold text-gray-800">Mino da Fiesole</p>
               <svg
                 class="artist_arrow stroke-background rounded-full p-2 w-10 h-10 -rotate-45 transition"
@@ -130,17 +141,21 @@
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
             </div>
-            <p class="text-gray-600">
+            <p class="text-gray-600 md:w-4/5 md:mx-auto">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Recusandae ab quibusdam consectetur?
             </p>
           </div>
           <div class="space-y-6 artist_card cursor-pointer">
-            <img class="" src="assets/boy2-d7263b59.jpg" alt="" />
+            <img
+              class="md:w-4/5 md:mx-auto sm:w-11/12"
+              src="assets/boy2-d7263b59.jpg"
+              alt=""
+            />
             <span
-              class="artist_border transition border-b-2 border-gray-300 block"
+              class="artist_border transition border-b-2 border-gray-300 block md:w-4/5 md:mx-auto"
             ></span>
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between items-center md:w-4/5 md:mx-auto">
               <p class="text-3xl font-bold text-gray-800">Mino da Fiesole</p>
               <svg
                 class="artist_arrow stroke-background rounded-full p-2 w-10 h-10 -rotate-45 transition"
@@ -156,17 +171,21 @@
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
             </div>
-            <p class="text-gray-600">
+            <p class="text-gray-600 md:w-4/5 md:mx-auto">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Recusandae ab quibusdam consectetur?
             </p>
           </div>
           <div class="space-y-6 artist_card cursor-pointer">
-            <img class="" src="assets/boy2-d7263b59.jpg" alt="" />
+            <img
+              class="md:w-4/5 md:mx-auto sm:w-11/12"
+              src="assets/boy2-d7263b59.jpg"
+              alt=""
+            />
             <span
-              class="artist_border transition border-b-2 border-gray-300 block"
+              class="artist_border transition border-b-2 border-gray-300 block md:w-4/5 md:mx-auto"
             ></span>
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between items-center md:w-4/5 md:mx-auto">
               <p class="text-3xl font-bold text-gray-800">Mino da Fiesole</p>
               <svg
                 class="artist_arrow stroke-background rounded-full p-2 w-10 h-10 -rotate-45 transition"
@@ -182,7 +201,7 @@
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
             </div>
-            <p class="text-gray-600">
+            <p class="text-gray-600 md:w-4/5 md:mx-auto">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Recusandae ab quibusdam consectetur?
             </p>
@@ -193,8 +212,12 @@
       <!-- * Gallery -->
       <div class="py-12">
         <!-- # CTA -->
-        <div class="center justify-between py-4">
-          <h2 class="text-7xl leading-tight font-bold uppercase">
+        <div
+          class="center justify-between py-4 lg:flex-col lg:items-start lg:space-y-8 md:w-4/5 md:mx-auto"
+        >
+          <h2
+            class="text-7xl leading-tight font-bold uppercase xl:text-5xl xs:text-3xl"
+          >
             top collection gallery
           </h2>
           <button class="btn">
@@ -217,11 +240,11 @@
 
         <!-- # Gallery -->
         <div class="flex items-center justify-between py-16">
-          <div class="w-2/5 space-y-8 py-12">
+          <div class="w-2/5 space-y-8 py-12 lg:w-full">
             <div></div>
             <div class="artist_card cursor-pointer space-y-6">
               <div class="flex justify-between items-center">
-                <p class="text-4.5xl font-bold text-black">
+                <p class="text-4.5xl font-bold text-black xs:text-2xl">
                   Mercury and Physice
                 </p>
                 <svg
@@ -238,7 +261,7 @@
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
               </div>
-              <p class="text-gray-600">
+              <p class="text-gray-600 xs:text-sm">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Recusandae ab quibusdam consectetur?
               </p>
@@ -248,7 +271,7 @@
             </div>
             <div class="artist_card cursor-pointer space-y-6">
               <div class="flex justify-between items-center">
-                <p class="text-4.5xl font-bold text-black">
+                <p class="text-4.5xl font-bold text-black xs:text-2xl">
                   Mercury and Physice
                 </p>
                 <svg
@@ -265,7 +288,7 @@
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
               </div>
-              <p class="text-gray-600">
+              <p class="text-gray-600 xs:text-sm">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Recusandae ab quibusdam consectetur?
               </p>
@@ -275,7 +298,7 @@
             </div>
             <div class="artist_card cursor-pointer space-y-6">
               <div class="flex justify-between items-center">
-                <p class="text-4.5xl font-bold text-black">
+                <p class="text-4.5xl font-bold text-black xs:text-2xl">
                   Mercury and Physice
                 </p>
                 <svg
@@ -292,7 +315,7 @@
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
               </div>
-              <p class="text-gray-600">
+              <p class="text-gray-600 xs:text-sm">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Recusandae ab quibusdam consectetur?
               </p>
@@ -302,7 +325,7 @@
             </div>
           </div>
 
-          <div class="w-1/2">
+          <div class="w-1/2 lg:hidden">
             <img
               class="w-full mix-blend-multiply"
               src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*bx07Vl_G1qZ8a4uxUzAOdw.jpeg"
@@ -319,7 +342,9 @@
           class="flex justify-between border-b-gray-500 border-b pt-6 overflow-hidden"
         >
           <div class="space-y-6 py-6">
-            <h2 class="text-7xl leading-tight font-bold uppercase">
+            <h2
+              class="text-7xl leading-tight font-bold uppercase lg:text-5xl xs:text-3xl"
+            >
               Upcoming exhibition
             </h2>
             <p class="text-gray-600">
@@ -453,7 +478,7 @@
         </button>
       </div>
 
-      <div class="mt-40 flex justify-between">
+      <div class="mt-40 flex justify-between lg:flex-col">
         <div class="flex-[.4] space-y-4">
           <p class="text-2xl font-bold">Sketchelle</p>
           <p class="text-gray-400">
@@ -461,26 +486,26 @@
             history to the present.
           </p>
         </div>
-        <div class="flex flex-[.6] justify-between">
+        <div class="flex flex-[.6] justify-between lg:flex-col">
           <ul class="text-theme_white space-y-2">
             <li class="text-gray-300">Visit</li>
-            <li class="cursor-pointer">Musumem Map</li>
-            <li class="cursor-pointer">Exhibition</li>
-            <li class="cursor-pointer">Accessbility</li>
+            <li class="footer_links">Musumem Map</li>
+            <li class="footer_links">Exhibition</li>
+            <li class="footer_links">Accessbility</li>
           </ul>
 
           <ul class="text-theme_white space-y-2">
             <li class="text-gray-300">Visit</li>
-            <li class="cursor-pointer">Musumem Map</li>
-            <li class="cursor-pointer">Exhibition</li>
-            <li class="cursor-pointer">Accessbility</li>
+            <li class="footer_links">Musumem Map</li>
+            <li class="footer_links">Exhibition</li>
+            <li class="footer_links">Accessbility</li>
           </ul>
 
           <ul class="text-theme_white space-y-2">
             <li class="text-gray-300">Visit</li>
-            <li class="cursor-pointer">Musumem Map</li>
-            <li class="cursor-pointer">Exhibition</li>
-            <li class="cursor-pointer">Accessbility</li>
+            <li class="footer_links">Musumem Map</li>
+            <li class="footer_links">Exhibition</li>
+            <li class="footer_links">Accessbility</li>
           </ul>
 
           <ul class="text-theme_white space-y-2">
@@ -488,7 +513,7 @@
             <li>
               <div class="flex space-x-2">
                 <svg
-                  class="cursor-pointer"
+                  class="cursor-pointer hover:stroke-primary transition"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -507,7 +532,7 @@
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                 </svg>
                 <svg
-                  class="cursor-pointer"
+                  class="cursor-pointer hover:stroke-primary transition"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -526,7 +551,7 @@
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                 </svg>
                 <svg
-                  class="cursor-pointer"
+                  class="cursor-pointer hover:stroke-primary transition"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
